@@ -1,0 +1,2498 @@
+﻿@{
+  ViewData["Title"] = "بایت اوربیت - کارگاه رباتیک";
+  Layout = null;
+}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="بایت اوربیت - کارگاه تخصصی آموزش رباتیک، الکترونیک و برنامه‌نویسی در اصفهان">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+  <title>بایت اوربیت | کارگاه رباتیک - آموزش برنامه‌نویسی، الکترونیک و رباتیک</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <style>
+      /* ===== ORBIT RTL & PERSIAN FONT OVERRIDE ===== */
+      *,
+      body,
+      html {
+        font-family: 'Vazirmatn', 'Poppins', sans-serif !important;
+      }
+
+      body {
+        direction: rtl;
+      }
+
+      /* ===== COLOR PALETTE OVERRIDE ===== */
+      :root {
+        --orbit-dark: #007171;
+        --orbit-mid: #006868;
+        --orbit-base: #008d8d;
+        --orbit-light: #00bcbc;
+        --orbit-pale: #eef8fa;
+        --orbit-orange: #ed7d31;
+        --orbit-peach: #f5be98;
+      }
+
+      ::selection {
+        background: var(--orbit-base);
+        color: #fff;
+      }
+
+      ::-moz-selection {
+        background: var(--orbit-base);
+        color: #fff;
+      }
+
+      /* ===== PRELOADER ===== */
+      .preloader-inner .dot,
+      .preloader-inner .dots span {
+        background: var(--orbit-light) !important;
+      }
+
+      /* ===== HEADER ===== */
+      .background-header {
+        background-color: var(--orbit-dark) !important;
+      }
+
+      .header-area .main-nav .logo h1 {
+        color: #fff;
+        font-size: 26px;
+        letter-spacing: 1px;
+      }
+
+      .header-area .main-nav .nav li a {
+        color: #fff;
+        font-weight: 500;
+      }
+
+      .header-area .main-nav .nav li a:hover,
+      .header-area .main-nav .nav li a.active {
+        color: var(--orbit-peach) !important;
+        border-bottom: 2px solid var(--orbit-orange);
+      }
+
+      .background-header .main-nav .nav li a {
+        color: #fff;
+      }
+
+      .background-header .main-nav .nav li a:hover,
+      .background-header .main-nav .nav li a.active {
+        color: var(--orbit-peach) !important;
+      }
+
+      .header-area .main-nav #search input {
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .header-area .main-nav #search input::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .header-area .main-nav #search i {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .orbit-register-btn {
+        background: var(--orbit-orange) !important;
+        color: #fff !important;
+        border-radius: 25px !important;
+        padding: 6px 20px !important;
+        font-weight: 600 !important;
+        transition: all .3s !important;
+      }
+
+      .orbit-register-btn:hover {
+        background: var(--orbit-peach) !important;
+        color: var(--orbit-dark) !important;
+        border-bottom: none !important;
+      }
+
+      /* ===== BANNER ===== */
+      .main-banner .item-1 {
+        background-image: url('assets/images/banner-01.jpg');
+        background-color: var(--orbit-dark);
+      }
+
+      .main-banner .item-2 {
+        background-image: url('assets/images/banner-02.jpg');
+        background-color: var(--orbit-mid);
+      }
+
+      .main-banner .item-3 {
+        background-image: url('assets/images/banner-03.jpg');
+        background-color: var(--orbit-base);
+      }
+
+      .main-banner .item {
+        background-color: var(--orbit-dark);
+        min-height: 600px;
+      }
+
+      .main-banner .item::before {
+        background: linear-gradient(135deg, rgba(0, 113, 113, 0.92) 0%, rgba(0, 188, 188, 0.75) 100%);
+      }
+
+      .main-banner .item span.category {
+        background: var(--orbit-orange);
+        color: #fff;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 18px;
+        font-weight: 600;
+      }
+
+      .main-banner .item h2 {
+        font-size: 42px;
+        line-height: 58px;
+        color: #fff;
+      }
+
+      .main-banner .item p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 15px;
+      }
+
+      .main-banner .item .buttons .main-button a {
+        background: var(--orbit-orange);
+        color: #fff;
+        border-radius: 25px;
+        padding: 12px 30px;
+        height: auto;
+        line-height: normal;
+        font-weight: 600;
+      }
+
+      .main-banner .item .buttons .main-button a:hover {
+        background: var(--orbit-peach);
+        color: var(--orbit-dark);
+      }
+
+      .main-banner .item .buttons .icon-button a {
+        color: #fff;
+        font-size: 14px;
+      }
+
+      .main-banner .owl-nav .owl-prev i,
+      .main-banner .owl-nav .owl-next i {
+        background: var(--orbit-orange);
+        color: #fff;
+        border-color: var(--orbit-orange);
+      }
+
+      .main-banner .owl-nav .owl-prev i:hover,
+      .main-banner .owl-nav .owl-next i:hover {
+        background: var(--orbit-dark);
+      }
+
+      /* ===== SECTION HEADINGS ===== */
+      .section-heading h6 {
+        color: var(--orbit-orange) !important;
+      }
+
+      .section-heading h2 em {
+        color: var(--orbit-base) !important;
+      }
+
+      /* ===== MAIN BUTTON ===== */
+      .main-button a {
+        background: var(--orbit-pale);
+        color: var(--orbit-dark);
+        border: 2px solid var(--orbit-base);
+        font-weight: 600;
+      }
+
+      .main-button a:hover {
+        background: var(--orbit-dark);
+        color: #fff;
+        border-color: var(--orbit-dark);
+      }
+
+      /* ===== SERVICES ===== */
+      .services .service-item {
+        border-radius: 16px;
+        border: 2px solid transparent;
+        transition: all .3s;
+      }
+
+      .services .service-item:hover {
+        border-color: var(--orbit-light);
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 188, 188, 0.15);
+      }
+
+      .services .service-item .icon {
+        background: linear-gradient(135deg, var(--orbit-pale) 0%, #d4f0f0 100%);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+      }
+
+      .services .service-item .icon i {
+        font-size: 36px;
+        color: var(--orbit-dark);
+      }
+
+      .services .service-item h4 {
+        color: var(--orbit-dark);
+        font-size: 18px;
+      }
+
+      /* ===== ABOUT ACCORDION ===== */
+      .accordion-button:not(.collapsed) {
+        background: var(--orbit-pale);
+        color: var(--orbit-dark);
+        box-shadow: none;
+      }
+
+      .accordion-button:focus {
+        box-shadow: 0 0 0 3px rgba(0, 188, 188, 0.25);
+      }
+
+      h2.accordion-header button {
+        color: var(--orbit-mid);
+        font-weight: 600;
+      }
+
+      .accordion-item {
+        border-color: rgba(0, 141, 141, 0.2) !important;
+        border-radius: 10px !important;
+        margin-bottom: 8px;
+        overflow: hidden;
+      }
+
+      .accordion-button::after {
+        filter: hue-rotate(160deg) saturate(2);
+      }
+
+      /* ===== COURSES ===== */
+      .event_filter li a.is_active,
+      .event_filter li a:hover {
+        background: var(--orbit-dark) !important;
+        color: #fff !important;
+      }
+
+      .events_item .thumb span.category {
+        background: var(--orbit-base);
+      }
+
+      .events_item .thumb span.price {
+        background: var(--orbit-orange);
+      }
+
+      .events_item:hover .thumb span.price {
+        background: var(--orbit-dark);
+      }
+
+      .events_item:hover .down-content h4 {
+        color: var(--orbit-base);
+      }
+
+      .course-level-badge {
+        display: inline-block;
+        background: var(--orbit-pale);
+        color: var(--orbit-dark);
+        border-radius: 12px;
+        padding: 3px 12px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        border: 1px solid var(--orbit-light);
+      }
+
+      .course-terms {
+        font-size: 12px;
+        color: var(--orbit-base);
+        font-weight: 600;
+      }
+
+      /* ===== FUN FACTS ===== */
+      .fun-facts {
+        background: linear-gradient(135deg, var(--orbit-dark) 0%, var(--orbit-base) 60%, var(--orbit-light) 100%) !important;
+      }
+
+      .fun-facts:before,
+      .fun-facts:after {
+        background: transparent !important;
+      }
+
+      .fun-facts h2,
+      .fun-facts p {
+        color: #fff !important;
+      }
+
+      .fun-facts h2::after {
+        background: var(--orbit-orange) !important;
+      }
+
+      /* ===== PRICING SECTION ===== */
+      .pricing-section {
+        background: var(--orbit-pale);
+        padding: 80px 0;
+        margin-top: 80px;
+      }
+
+      .pricing-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 35px 30px;
+        box-shadow: 0 8px 30px rgba(0, 113, 113, 0.1);
+        transition: all .3s;
+        border: 2px solid transparent;
+        height: 100%;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-8px);
+        border-color: var(--orbit-light);
+        box-shadow: 0 20px 50px rgba(0, 188, 188, 0.2);
+      }
+
+      .pricing-card.featured {
+        background: linear-gradient(135deg, var(--orbit-dark) 0%, var(--orbit-base) 100%);
+        color: #fff;
+        border-color: var(--orbit-orange);
+      }
+
+      .pricing-card.featured h3,
+      .pricing-card.featured p,
+      .pricing-card.featured li,
+      .pricing-card.featured .price-amount {
+        color: #fff !important;
+      }
+
+      .pricing-card.featured .pricing-badge {
+        background: var(--orbit-orange);
+      }
+
+      .pricing-badge {
+        background: var(--orbit-pale);
+        color: var(--orbit-dark);
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-size: 13px;
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+
+      .price-amount {
+        font-size: 28px;
+        font-weight: 800;
+        color: var(--orbit-dark);
+        line-height: 1.2;
+      }
+
+      .price-unit {
+        font-size: 14px;
+        color: #888;
+        font-weight: 400;
+      }
+
+      .pricing-card.featured .price-unit {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .pricing-features {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+
+      .pricing-features li {
+        padding: 6px 0;
+        border-bottom: 1px solid rgba(0, 141, 141, 0.1);
+        font-size: 14px;
+      }
+
+      .pricing-features li::before {
+        content: "✓ ";
+        color: var(--orbit-orange);
+        font-weight: 700;
+      }
+
+      .pricing-card.featured .pricing-features li {
+        border-bottom-color: rgba(255, 255, 255, 0.15);
+      }
+
+      .pricing-card.featured .pricing-features li::before {
+        color: var(--orbit-peach);
+      }
+
+      .pricing-cta {
+        display: block;
+        text-align: center;
+        background: var(--orbit-orange);
+        color: #fff !important;
+        border-radius: 25px;
+        padding: 12px 25px;
+        font-weight: 700;
+        margin-top: 20px;
+        transition: all .3s;
+      }
+
+      .pricing-cta:hover {
+        background: var(--orbit-dark);
+      }
+
+      .pricing-card.featured .pricing-cta {
+        background: #fff;
+        color: var(--orbit-dark) !important;
+      }
+
+      .pricing-card.featured .pricing-cta:hover {
+        background: var(--orbit-peach);
+        color: var(--orbit-dark) !important;
+      }
+
+      /* ===== EQUIPMENT SECTION ===== */
+      .equipment-section {
+        padding: 80px 0;
+      }
+
+      .equipment-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 30px;
+        border: 2px solid var(--orbit-pale);
+        transition: all .3s;
+      }
+
+      .equipment-card:hover {
+        border-color: var(--orbit-light);
+        box-shadow: 0 10px 30px rgba(0, 188, 188, 0.15);
+      }
+
+      .equipment-icon {
+        font-size: 48px;
+        color: var(--orbit-base);
+        margin-bottom: 15px;
+      }
+
+      .equipment-price-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+        border-bottom: 1px dashed rgba(0, 141, 141, 0.2);
+      }
+
+      .equipment-price-buy {
+        color: var(--orbit-dark);
+        font-weight: 700;
+      }
+
+      .equipment-price-rent {
+        color: var(--orbit-orange);
+        font-weight: 600;
+      }
+
+      /* ===== GUARANTEE SECTION ===== */
+      .guarantee-section {
+        background: linear-gradient(135deg, var(--orbit-pale) 0%, #d4f0f0 100%);
+        padding: 80px 0;
+      }
+
+      .guarantee-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0, 113, 113, 0.1);
+        height: 100%;
+        border-top: 4px solid var(--orbit-base);
+        transition: all .3s;
+      }
+
+      .guarantee-card:hover {
+        transform: translateY(-5px);
+        border-top-color: var(--orbit-orange);
+      }
+
+      .guarantee-icon {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, var(--orbit-pale), #d4f0f0);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+      }
+
+      .guarantee-icon i {
+        font-size: 30px;
+        color: var(--orbit-dark);
+      }
+
+      .guarantee-card h4 {
+        color: var(--orbit-dark);
+        margin-bottom: 12px;
+        font-size: 18px;
+      }
+
+      /* ===== TEAM ===== */
+      .team-member .main-content span.category {
+        color: var(--orbit-base);
+      }
+
+      .team-member .main-content ul li a {
+        background: var(--orbit-pale);
+        color: var(--orbit-dark);
+      }
+
+      .team-member .main-content ul li a:hover {
+        background: var(--orbit-dark);
+        color: #fff;
+      }
+
+      /* ===== TESTIMONIALS ===== */
+      .testimonials {
+        background: linear-gradient(135deg, var(--orbit-dark) 0%, var(--orbit-mid) 100%) !important;
+      }
+
+      .testimonials .item p {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .testimonials .item span {
+        color: var(--orbit-peach);
+      }
+
+      .testimonials .item h4 {
+        color: #fff;
+      }
+
+      .testimonials .section-heading h6 {
+        color: var(--orbit-peach) !important;
+      }
+
+      .testimonials .section-heading h2 {
+        color: #fff;
+      }
+
+      .testimonials .section-heading p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .testimonials .owl-nav .owl-prev i,
+      .testimonials .owl-nav .owl-next i {
+        background: var(--orbit-orange);
+        border-color: var(--orbit-orange);
+        color: #fff;
+      }
+
+      .testimonials .owl-nav .owl-prev i:hover,
+      .testimonials .owl-nav .owl-next i:hover {
+        background: #fff;
+        color: var(--orbit-dark);
+      }
+
+      /* ===== EVENTS/SCHEDULE ===== */
+      .events .item {
+        border-right: 4px solid var(--orbit-base);
+        border-radius: 12px;
+      }
+
+      .events .item:hover {
+        border-right-color: var(--orbit-orange);
+      }
+
+      .events .item ul li span.category {
+        background: var(--orbit-light);
+      }
+
+      .events .item a {
+        background: var(--orbit-base);
+        color: #fff;
+        border-radius: 50%;
+      }
+
+      .events .item a:hover {
+        background: var(--orbit-orange);
+      }
+
+      /* ===== CONTACT ===== */
+      .contact-us {
+        background: var(--orbit-pale) !important;
+      }
+
+      .contact-us::before {
+        background: linear-gradient(135deg, var(--orbit-dark) 0%, var(--orbit-base) 100%) !important;
+      }
+
+      .contact-us .section-heading h6 {
+        color: var(--orbit-peach) !important;
+      }
+
+      .contact-us .section-heading h2 {
+        color: #fff;
+      }
+
+      .contact-us .section-heading p {
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .special-offer-orbit {
+        background: linear-gradient(135deg, var(--orbit-orange), var(--orbit-peach));
+        border-radius: 16px;
+        padding: 25px;
+        color: #fff;
+        margin-top: 20px;
+      }
+
+      .special-offer-orbit .festival-price {
+        font-size: 32px;
+        font-weight: 800;
+        color: #fff;
+      }
+
+      .special-offer-orbit .original-price {
+        font-size: 16px;
+        text-decoration: line-through;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .special-offer-orbit .discount-tag {
+        background: var(--orbit-dark);
+        color: #fff;
+        border-radius: 12px;
+        padding: 4px 14px;
+        font-size: 13px;
+        font-weight: 700;
+        display: inline-block;
+        margin-top: 8px;
+      }
+
+      #contact-form input,
+      #contact-form textarea,
+      #contact-form select {
+        border: 2px solid rgba(0, 141, 141, 0.2) !important;
+        border-radius: 10px !important;
+        color: #333;
+        transition: border-color .3s;
+      }
+
+      #contact-form input:focus,
+      #contact-form textarea:focus,
+      #contact-form select:focus {
+        border-color: var(--orbit-base) !important;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 188, 188, 0.15) !important;
+      }
+
+      #contact-form button {
+        background: var(--orbit-orange) !important;
+        color: #fff !important;
+        border-radius: 25px !important;
+        font-weight: 700 !important;
+        height: auto !important;
+        padding: 14px 35px !important;
+        font-size: 16px !important;
+        border: none !important;
+        transition: all .3s !important;
+        width: 100%;
+      }
+
+      #contact-form button:hover {
+        background: var(--orbit-dark) !important;
+        transform: translateY(-2px);
+      }
+
+      .contact-us-content {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 113, 113, 0.15);
+      }
+
+      /* ===== MODAL ===== */
+      .modal-header {
+        background: linear-gradient(135deg, var(--orbit-dark), var(--orbit-base));
+        color: #fff;
+        border-radius: 16px 16px 0 0;
+      }
+
+      .modal-header .btn-close {
+        filter: invert(1);
+      }
+
+      .modal-title {
+        color: #fff;
+        font-weight: 700;
+      }
+
+      .modal-content {
+        border-radius: 16px;
+        border: none;
+      }
+
+      .modal-footer {
+        border-top: 1px solid rgba(0, 141, 141, 0.15);
+      }
+
+      .btn-orbit-primary {
+        background: var(--orbit-orange);
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 28px;
+        font-weight: 700;
+        transition: all .3s;
+      }
+
+      .btn-orbit-primary:hover {
+        background: var(--orbit-dark);
+        color: #fff;
+      }
+
+      .btn-orbit-secondary {
+        background: var(--orbit-pale);
+        color: var(--orbit-dark);
+        border: 2px solid var(--orbit-base);
+        border-radius: 25px;
+        padding: 10px 28px;
+        font-weight: 600;
+        transition: all .3s;
+      }
+
+      .btn-orbit-secondary:hover {
+        background: var(--orbit-dark);
+        color: #fff;
+        border-color: var(--orbit-dark);
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        background: linear-gradient(135deg, var(--orbit-dark), var(--orbit-mid)) !important;
+      }
+
+      footer p {
+        color: rgba(255, 255, 255, 0.85) !important;
+      }
+
+      footer p a {
+        color: var(--orbit-peach) !important;
+      }
+
+      footer p a:hover {
+        color: #fff !important;
+      }
+
+      footer::before {
+        background: transparent !important;
+      }
+
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 14px;
+        display: block;
+        margin-bottom: 8px;
+        transition: all .3s;
+      }
+
+      .footer-links a:hover {
+        color: var(--orbit-peach);
+        padding-right: 5px;
+      }
+
+      .footer-social a {
+        display: inline-block;
+        width: 38px;
+        height: 38px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        line-height: 38px;
+        text-align: center;
+        color: #fff;
+        margin-left: 8px;
+        transition: all .3s;
+      }
+
+      .footer-social a:hover {
+        background: var(--orbit-orange);
+      }
+
+      /* ===== ABOUT SECTION ===== */
+      .about-us {
+        background: #fff;
+      }
+
+      .about-us:before {
+        background: linear-gradient(135deg, var(--orbit-pale) 0%, #d4f0f0 100%) !important;
+      }
+
+      .about-us .section-heading .main-button a {
+        background: var(--orbit-orange);
+        color: #fff;
+      }
+
+      .about-us .section-heading .main-button a:hover {
+        background: var(--orbit-dark);
+      }
+
+      /* ===== ROADMAP SECTION ===== */
+      .roadmap-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .roadmap-card {
+        background: var(--orbit-pale);
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        border: 2px solid rgba(0, 188, 188, 0.2);
+        transition: all .3s;
+        height: 100%;
+      }
+
+      .roadmap-card:hover {
+        background: linear-gradient(135deg, var(--orbit-pale), #c5eaea);
+        border-color: var(--orbit-light);
+        transform: translateY(-5px);
+      }
+
+      .roadmap-card.start-card {
+        background: linear-gradient(135deg, var(--orbit-dark), var(--orbit-base));
+        color: #fff;
+        border-color: var(--orbit-orange);
+      }
+
+      .roadmap-card.start-card h4,
+      .roadmap-card.start-card p,
+      .roadmap-card.start-card span {
+        color: #fff !important;
+      }
+
+      .roadmap-card.advanced-card {
+        background: linear-gradient(135deg, var(--orbit-orange), var(--orbit-peach));
+        color: #fff;
+        border-color: var(--orbit-dark);
+      }
+
+      .roadmap-card.advanced-card h4,
+      .roadmap-card.advanced-card p,
+      .roadmap-card.advanced-card span {
+        color: #fff !important;
+      }
+
+      .roadmap-card h4 {
+        color: var(--orbit-dark);
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .roadmap-card .terms-badge {
+        background: var(--orbit-dark);
+        color: #fff;
+        border-radius: 20px;
+        padding: 4px 14px;
+        font-size: 13px;
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 12px;
+      }
+
+      .roadmap-card.start-card .terms-badge {
+        background: var(--orbit-orange);
+      }
+
+      .roadmap-card.advanced-card .terms-badge {
+        background: var(--orbit-dark);
+      }
+
+      .roadmap-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--orbit-base);
+        font-size: 28px;
+      }
+
+      /* ===== CURRICULUM SECTION ===== */
+      .curriculum-section {
+        background: var(--orbit-pale);
+        padding: 80px 0;
+      }
+
+      .curriculum-tab-btn {
+        background: #fff;
+        border: 2px solid var(--orbit-base);
+        color: var(--orbit-dark);
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-weight: 600;
+        transition: all .3s;
+        margin-bottom: 8px;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+      }
+
+      .curriculum-tab-btn.active,
+      .curriculum-tab-btn:hover {
+        background: var(--orbit-dark);
+        color: #fff;
+        border-color: var(--orbit-dark);
+      }
+
+      .curriculum-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(0, 141, 141, 0.15);
+        font-size: 14px;
+        color: #444;
+      }
+
+      .curriculum-list li::before {
+        content: "◉ ";
+        color: var(--orbit-base);
+        font-size: 10px;
+      }
+
+      .curriculum-panel {
+        display: none;
+      }
+
+      .curriculum-panel.active {
+        display: block;
+      }
+
+      /* ===== MISC ===== */
+      .orbit-badge {
+        background: var(--orbit-orange);
+        color: #fff;
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .orbit-highlight {
+        color: var(--orbit-orange);
+        font-weight: 700;
+      }
+
+      .orbit-line {
+        height: 4px;
+        background: linear-gradient(90deg, var(--orbit-dark), var(--orbit-light), var(--orbit-orange));
+        border-radius: 2px;
+        margin: 15px auto;
+        width: 60px;
+      }
+
+      .alert-orbit {
+        background: linear-gradient(135deg, rgba(0, 113, 113, 0.08), rgba(0, 188, 188, 0.05));
+        border: 2px solid var(--orbit-light);
+        border-radius: 12px;
+        padding: 15px 20px;
+        color: var(--orbit-dark);
+      }
+
+      .form-success {
+        display: none;
+        background: linear-gradient(135deg, var(--orbit-pale), #d4f0f0);
+        border: 2px solid var(--orbit-light);
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        color: var(--orbit-dark);
+        font-weight: 600;
+      }
+
+      .form-error {
+        display: none;
+        background: #fff5f5;
+        border: 2px solid #fc8181;
+        border-radius: 12px;
+        padding: 15px;
+        color: #c53030;
+        font-size: 14px;
+      }
+
+      .mb-30 {
+        margin-bottom: 30px;
+      }
+
+      @@media (max-width: 767px) {
+        .main-banner .item h2 {
+          font-size: 26px;
+          line-height: 38px;
+        }
+
+        .pricing-card {
+          margin-bottom: 20px;
+        }
+
+        .roadmap-arrow {
+          transform: rotate(90deg);
+          margin: 10px 0;
+        }
+
+        .curriculum-tab-btn {
+          font-size: 13px;
+          padding: 8px 15px;
+        }
+
+        .price-amount {
+          font-size: 22px;
+        }
+      }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="#top" class="logo">
+              <h1 style="font-family:'Vazirmatn',sans-serif; font-size:22px; letter-spacing:0;">
+                <span style="color:#00bcbc;">Byte</span> <span style="color:#fff;">Orbit</span>
+              </h1>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Search Start ***** -->
+            <div class="search-input">
+              <form id="search" action="#">
+                <input type="text" placeholder="جستجو..." id='searchText' name="searchKeyword" />
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+            <!-- ***** Search End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">خانه</a></li>
+              <li class="scroll-to-section"><a href="#services">خدمات</a></li>
+              <li class="scroll-to-section"><a href="#courses">دوره‌ها</a></li>
+              <li class="scroll-to-section"><a href="#pricing">شهریه</a></li>
+              <li class="scroll-to-section"><a href="#events">برنامه</a></li>
+              <li class="scroll-to-section"><a href="#contact" class="orbit-register-btn">ثبت‌نام رایگان!</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>منو</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** BANNER START ***** -->
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="item item-1">
+              <div class="header-text">
+                <span class="category">نقطه‌ی شروع</span>
+                <h2>به جای مصرف‌کننده‌ی تکنولوژی،<br><em style="color:#f5be98;font-style:normal;">تولیدکننده‌اش
+                  باش!</em></h2>
+                  <p>اولین قدم به دنیای برنامه‌نویسی، الکترونیک و رباتیک. با بایت اوربیت، از صفر تا یک شروع می‌کنیم و
+                    دستگاه بازی خودت رو می‌سازیم!</p>
+                    <div class="buttons">
+                      <div class="main-button">
+                        <a href="#contact" data-bs-toggle="modal" data-bs-target="#registerModal">ثبت‌نام رایگان</a>
+                      </div>
+                      <div class="icon-button">
+                        <a href="#courses"><i class="fa fa-play"></i> دوره‌ها را ببین</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item item-2">
+                  <div class="header-text">
+                    <span class="category">آموزش پروژه‌محور</span>
+                    <h2>رباتیک، برنامه‌نویسی و الکترونیک<br><em style="color:#f5be98;font-style:normal;">در یک کارگاه
+                      تخصصی</em></h2>
+                      <p>آموزش عمیق و شهودی، نه حفظی! پایتون می‌نویسیم، میکروکنترلر راه می‌اندازیم و پروژه‌های واقعی می‌سازیم.
+                        ظرفیت فقط ۱۶ نفر!</p>
+                        <div class="buttons">
+                          <div class="main-button">
+                            <a href="#pricing">مشاهده شهریه</a>
+                          </div>
+                          <div class="icon-button">
+                            <a href="#courses"><i class="fa fa-play"></i> دوره‌های آموزشی</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item item-3">
+                      <div class="header-text">
+                        <span class="category">جشنواره شروع تازه!</span>
+                        <h2>ثبت‌نام کن، <em style="color:#f5be98;font-style:normal;">۳٬۷۵۰٬۰۰۰ تومان</em><br>با گارانتی بازگشت
+                          وجه</h2>
+                          <p>تضمین یادگیری موفق + گارانتی رضایت + گارانتی تعویض قطعات. اگر دوست داشتی همراه بیاری، هر دونفر ۷۰۰
+                            هزار تومان تخفیف می‌گیرید!</p>
+                            <div class="buttons">
+                              <div class="main-button">
+                                <a href="#contact" data-bs-toggle="modal" data-bs-target="#registerModal">همین الان ثبت‌نام کن</a>
+                              </div>
+                              <div class="icon-button">
+                                <a href="#guarantee"><i class="fa fa-shield"></i> گارانتی‌ها</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** BANNER END ***** -->
+
+              <!-- ***** SERVICES START ***** -->
+              <div class="services section" id="services">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                      <div class="section-heading">
+                        <h6>چرا بایت اوربیت؟</h6>
+                        <h2>چهار <em>پایه‌ی بنیادی</em> آموزش ما</h2>
+                        <div class="orbit-line"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="service-item" style="text-align:center; padding:30px 20px;">
+                        <div class="icon">
+                          <i class="fa fa-heart" style="font-size:36px; color:#007171;"></i>
+                        </div>
+                        <div class="main-content">
+                          <h4>لذت یادگیری</h4>
+                          <p>تجربه‌ی لذت یادگیری و پرورش سبک زندگی علم‌جویانه. یادگیری باید هیجان‌انگیز باشه، نه ترسناک!</p>
+                          <div class="main-button">
+                            <a href="#courses">بیشتر بدان</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="service-item" style="text-align:center; padding:30px 20px;">
+                        <div class="icon">
+                          <i class="fa fa-brain" style="font-size:36px; color:#007171;"></i>
+                        </div>
+                        <div class="main-content">
+                          <h4>فهم شهودی</h4>
+                          <p>به‌جای حفظ فرمول، فهم عمیق و شهودی نسبت به مباحث علمی. مفاهیم رو واقعاً درک می‌کنیم!</p>
+                          <div class="main-button">
+                            <a href="#courses">بیشتر بدان</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="service-item" style="text-align:center; padding:30px 20px;">
+                        <div class="icon">
+                          <i class="fa fa-project-diagram" style="font-size:36px; color:#007171;"></i>
+                        </div>
+                        <div class="main-content">
+                          <h4>پروژه‌محور</h4>
+                          <p>تدریس با مرکزیت دانش‌آموز و یادگیری پروژه‌محور. در هر جلسه چیزی می‌سازیم که بتونیم ببریم خونه!</p>
+                          <div class="main-button">
+                            <a href="#courses">بیشتر بدان</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                      <div class="service-item" style="text-align:center; padding:30px 20px;">
+                        <div class="icon">
+                          <i class="fa fa-lightbulb" style="font-size:36px; color:#007171;"></i>
+                        </div>
+                        <div class="main-content">
+                          <h4>ایده‌پردازی</h4>
+                          <p>توان‌مندسازی دانش‌آموز در راستای واقعی کردن ایده‌ها. از ذهن به واقعیت — این ماموریت ماست!</p>
+                          <div class="main-button">
+                            <a href="#courses">بیشتر بدان</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ***** SERVICES END ***** -->
+
+              <!-- ***** ABOUT / ROADMAP START ***** -->
+              <div class="section about-us">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6 offset-lg-1">
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                              🤖 نقطه‌ی شروع: از ۰ تا ۱ چیه؟
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                               data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              این دوره، ترکیبی از <strong>برنامه‌نویسی، رباتیک و الکترونیک</strong>ه و به عنوان دروازه‌ی ورود این سه
+                              شاخه‌ی مهندسی تدوین شده. اینجا، دانش‌آموزان به زبان <strong>میکروپایتون</strong> کد می‌زنن، با
+                              <strong>میکروکنترلرها</strong> آشنا می‌شن و دستگاه بازی خودشون رو می‌سازن!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              📚 هیچ پیش‌نیازی لازم نیست؟
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                               data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>هیچ پیش‌نیازی نداره!</strong> این دوره به عنوان اولین قدم طراحی شده. اگر هیچ‌وقت یه خط کد هم
+                              ننوشتی، یا هیچ‌وقت به مدار الکتریکی دست نزدی — جای درستی اومدی. این دوره به صورت مستقل هم تدوین شده و
+                              نیازی به شرکت در ترم‌های آتی برای بهره بردن از این دوره نیست.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              🎯 برای چه رده‌ی سنی مناسبه؟
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                               data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              این دوره برای سه رده‌ی سنی برگزار می‌شه: <strong>نیمه دوم دبستان (۱۰ تا ۱۲ سال)</strong>،
+                              <strong>متوسطه‌ی اول (۱۲ تا ۱۵ سال)</strong> و <strong>متوسطه‌ی دوم (۱۵ تا ۱۸ سال)</strong>. محتوای
+                              کلی یکسانه ولی عمق و نوع تمرین‌ها با رده‌ی سنی تنظیم شده. ظرفیت هر گروه فقط ۴ نفره!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              🏆 بعد از این دوره چی می‌شه؟
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                               data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              بعد از نقطه‌ی شروع، می‌تونی وارد سه مسیر تخصصی بشی: مسیر <strong>برنامه‌نویسی</strong> (از کد تا آتاری
+                              — ۵ ترم)، مسیر <strong>رباتیک</strong> (از باتری تا حرکت — ۶ ترم) یا مسیر <strong>الکترونیک</strong>
+                              (از الکترون تا رادیو — ۴ ترم). در انتهای هر دوره هم <strong>پورتفولیوی آنلاین</strong> صادر می‌شه.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 align-self-center">
+                      <div class="section-heading">
+                        <h6>درباره‌ی ما</h6>
+                        <h2>چرا بایت اوربیت <em>بهترین</em> انتخابه؟</h2>
+                        <p>بایت اوربیت یه کارگاه تخصصی آموزش رباتیک در اصفهان (چهارباغ پایین – دروازه دولت)ه. ما به هنرجوهامون یاد
+                          می‌دیم که به جای مصرف‌کننده‌ی تکنولوژی، تولیدکننده‌اش باشن. هر دوره با <strong>تضمین یادگیری موفق</strong>
+                          و <strong>گارانتی بازگشت وجه</strong> همراهه.</p>
+                          <div class="main-button">
+                            <a href="#contact" data-bs-toggle="modal" data-bs-target="#registerModal">مشاوره رایگان</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ***** ROADMAP SECTION ***** -->
+                <div class="roadmap-section">
+                  <div class="container">
+                    <div class="row mb-5">
+                      <div class="col-lg-12 text-center">
+                        <div class="section-heading">
+                          <h6>مسیر آموزشی</h6>
+                          <h2>از اینجا شروع کن، هرجا می‌خوای برو!</h2>
+                          <div class="orbit-line"></div>
+                          <p>بایت اوربیت سه شاخه‌ی تخصصی داره. همه از یه نقطه شروع می‌کنن.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-lg-12">
+                        <!-- Top: Starting point -->
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-lg-4 col-md-6">
+                            <div class="roadmap-card start-card text-center">
+                              <div class="terms-badge">۱۲ جلسه</div>
+                              <h4>🚀 نقطه‌ی شروع</h4>
+                              <p style="font-size:14px;">از ۰ تا ۱<br>دروازه‌ی ورود به سه دنیای مهندسی</p>
+                              <div
+                                style="background:rgba(255,255,255,0.2); border-radius:10px; padding:10px; margin-top:12px; font-size:13px;">
+                                میکروپایتون + الکترونیک + رباتیک = دستگاه بازی!
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Arrow down -->
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-12 text-center roadmap-arrow">
+                            <i class="fa fa-chevron-down" style="color:#008d8d; font-size:28px;"></i>
+                          </div>
+                        </div>
+                        <!-- Three branches -->
+                        <div class="row">
+                          <div class="col-lg-4 col-md-12 mb-3">
+                            <div class="roadmap-card text-center">
+                              <div class="terms-badge" style="background:#007171;">۵ ترم</div>
+                              <div style="font-size:40px; margin-bottom:10px;">💻</div>
+                              <h4>برنامه‌نویسی</h4>
+                              <p style="font-size:13px; color:#555;">از کد تا آتاری</p>
+                              <ul style="text-align:right; font-size:13px; color:#444; padding: 0 10px;">
+                                <li>✓ پایتون پیشرفته</li>
+                                <li>✓ ساخت بازی واقعی</li>
+                                <li>✓ الگوریتم و منطق</li>
+                                <li>✓ پروژه‌های مستقل</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-12 mb-3">
+                            <div class="roadmap-card text-center"
+                                 style="border-color:#ed7d31; background:linear-gradient(135deg,#fff5ef,#fef0e7);">
+                              <div class="terms-badge" style="background:#ed7d31;">۶ ترم</div>
+                              <div style="font-size:40px; margin-bottom:10px;">🤖</div>
+                              <h4 style="color:#007171;">رباتیک</h4>
+                              <p style="font-size:13px; color:#555;">از باتری تا حرکت</p>
+                              <ul style="text-align:right; font-size:13px; color:#444; padding: 0 10px;">
+                                <li>✓ طراحی مکانیکی</li>
+                                <li>✓ موتور و حسگر</li>
+                                <li>✓ کنترل بی‌سیم</li>
+                                <li>✓ ربات مستقل</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-12 mb-3">
+                            <div class="roadmap-card text-center">
+                              <div class="terms-badge" style="background:#007171;">۴ ترم</div>
+                              <div style="font-size:40px; margin-bottom:10px;">⚡</div>
+                              <h4>الکترونیک</h4>
+                              <p style="font-size:13px; color:#555;">از الکترون تا رادیو</p>
+                              <ul style="text-align:right; font-size:13px; color:#444; padding: 0 10px;">
+                                <li>✓ مدارات آنالوگ</li>
+                                <li>✓ طراحی PCB</li>
+                                <li>✓ ارتباطات رادیویی</li>
+                                <li>✓ مدار شخصی‌سازی‌شده</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Advanced -->
+                        <div class="row justify-content-center mt-3">
+                          <div class="col-12 text-center roadmap-arrow mb-3">
+                            <i class="fa fa-chevron-down" style="color:#008d8d; font-size:28px;"></i>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="roadmap-card advanced-card text-center">
+                              <div class="terms-badge">پیشرفته</div>
+                              <h4>🔬 رباتیک پیشرفته</h4>
+                              <div class="row mt-3">
+                                <div class="col">پردازش تصویر</div>
+                                <div class="col">هوش مصنوعی (LLM)</div>
+                                <div class="col">طراحی ۲ بعدی</div>
+                                <div class="col">مدل‌سازی ۳ بعدی</div>
+                                <div class="col">طراحی برد الکتریکی</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ***** ABOUT / ROADMAP END ***** -->
+
+                <!-- ***** CURRICULUM SECTION ***** -->
+                <div class="curriculum-section">
+                  <div class="container">
+                    <div class="row mb-5">
+                      <div class="col-lg-12 text-center">
+                        <div class="section-heading">
+                          <h6>سرفصل‌های آموزشی</h6>
+                          <h2>مباحث دوره‌ی <em>"از ۰ تا ۱"</em></h2>
+                          <div class="orbit-line"></div>
+                          <p>یه دوره با سه بعد — برنامه‌نویسی، برق و الکترونیک، و فیزیک</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-12 mb-4">
+                        <div class="curriculum-tab-btn active" onclick="showTab('programming', this)">💻 برنامه‌نویسی</div>
+                        <div class="curriculum-tab-btn" onclick="showTab('electronics', this)">⚡ برق و الکترونیک</div>
+                        <div class="curriculum-tab-btn" onclick="showTab('physics', this)">🔬 فیزیک</div>
+                      </div>
+                      <div class="col-lg-9 col-md-12">
+                        <div class="curriculum-panel active" id="tab-programming">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h5 style="color:#007171; margin-bottom:15px; font-size:16px;">مباحث اصلی</h5>
+                              <ul class="curriculum-list">
+                                <li>"برنامه" یعنی چه؟</li>
+                                <li>زبان برنامه‌نویسی میکروپایتون</li>
+                                <li>فرق میکروکنترلر و کامپیوتر</li>
+                                <li>نرم‌افزار Thonny IDE</li>
+                                <li>راه‌اندازی برد میکروکنترلر</li>
+                                <li>خروجی دیجیتال</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <h5 style="color:#007171; margin-bottom:15px; font-size:16px;">مباحث تکمیلی</h5>
+                              <ul class="curriculum-list">
+                                <li>متغیرها و محاسبات</li>
+                                <li>عبارت‌های شرطی (if/else)</li>
+                                <li>حلقه‌ها (for/while)</li>
+                                <li>لیست و آرایه</li>
+                                <li>توابع و ماژول‌ها</li>
+                                <li>پروژه‌ی نهایی: ساخت بازی</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="alert-orbit mt-3">
+                            <strong>🎯 پروژه‌ی نهایی:</strong> ساخت دستگاه بازی واکنشی و بازی حافظه با استفاده از میکروکنترلر و
+                            المان‌های الکترونیکی.
+                          </div>
+                        </div>
+                        <div class="curriculum-panel" id="tab-electronics">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h5 style="color:#007171; margin-bottom:15px; font-size:16px;">اصول برق</h5>
+                              <ul class="curriculum-list">
+                                <li>الکتریسیته و مهندسی برق</li>
+                                <li>الکترون و الکترومغناطیس</li>
+                                <li>جریان و ولتاژ الکتریکی</li>
+                                <li>مقاومت و قانون اهم</li>
+                                <li>باتری و منابع تغذیه</li>
+                                <li>دیود و ال‌ای‌دی</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <h5 style="color:#007171; margin-bottom:15px; font-size:16px;">سیگنال‌ها</h5>
+                              <ul class="curriculum-list">
+                                <li>مفهوم سیگنال و فرکانس</li>
+                                <li>سیگنال‌های آنالوگ و دیجیتال</li>
+                                <li>مفهوم واقعی ۰ و ۱ منطقی</li>
+                                <li>اندازه‌گیری با مولتی‌متر</li>
+                                <li>خواندن مدارهای ساده</li>
+                                <li>ایمنی در کار با برق</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="alert-orbit mt-3">
+                            <strong>⚡ نکته:</strong> تمام تمرین‌های الکترونیک با ولتاژ ایمن (۳.۳v و ۵v) انجام می‌شه و دانش‌آموز قبل از
+                            اتصال هر مدار، تأیید مربی رو می‌گیره.
+                          </div>
+                        </div>
+                        <div class="curriculum-panel" id="tab-physics">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h5 style="color:#007171; margin-bottom:15px; font-size:16px;">فیزیک نور</h5>
+                              <ul class="curriculum-list">
+                                <li>امواج الکترومغناطیسی</li>
+                                <li>فوتون، "ذره"های نور</li>
+                                <li>نور، طیف امواج مرئی</li>
+                                <li>رنگ چیست، چرا و چجوری؟</li>
+                                <li>پیکسل‌ها چگونه کار می‌کنند؟</li>
+                                <li>RGB و مدل رنگی</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <h5 style="color:#007171; margin-bottom:15px; font-size:16px;">ارتباط با رباتیک</h5>
+                              <ul class="curriculum-list">
+                                <li>چگونه LED کار می‌کند؟</li>
+                                <li>فیزیک صفحه نمایش</li>
+                                <li>حسگرهای نوری</li>
+                                <li>ارتباط فیزیک و مهندسی</li>
+                                <li>علم در دنیای واقعی</li>
+                                <li>نوشتن مقاله‌ی علمی ساده</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="alert-orbit mt-3">
+                            <strong>🔬 رویکرد:</strong> فیزیک رو با تجربه‌ی مستقیم یاد می‌گیریم، نه با فرمول حفظ‌کردنی! همه چیز رو با
+                            دست خودمون آزمایش می‌کنیم.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ***** COURSES START ***** -->
+                <section class="section courses" id="courses">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-12 text-center">
+                        <div class="section-heading">
+                          <h6>دوره‌های آموزشی</h6>
+                          <h2>تمام <em>مسیرهای آموزشی</em> بایت اوربیت</h2>
+                          <div class="orbit-line"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="event_filter">
+                      <li><a class="is_active" href="#!" data-filter="*">همه</a></li>
+                      <li><a href="#!" data-filter=".programming">برنامه‌نویسی</a></li>
+                      <li><a href="#!" data-filter=".robotics">رباتیک</a></li>
+                      <li><a href="#!" data-filter=".electronics">الکترونیک</a></li>
+                    </ul>
+                    <div class="row event_box">
+                      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer programming robotics electronics">
+                        <div class="events_item">
+                          <div class="thumb">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                              <div
+                                style="background:linear-gradient(135deg,#007171,#00bcbc); height:200px; display:flex; align-items:center; justify-content:center; font-size:64px;">
+                                🚀</div>
+                              </a>
+                              <span class="category">نقطه‌ی شروع</span>
+                              <span class="price">
+                                <h6>۱۲ جلسه</h6>
+                              </span>
+                            </div>
+                            <div class="down-content">
+                              <span class="author">از ۱۰ تا ۱۸ سال</span>
+                              <h4>از ۰ تا ۱ — دروازه‌ی مهندسی</h4>
+                              <p style="font-size:13px; color:#666; margin-top:8px;">اولین قدم به دنیای برنامه‌نویسی، رباتیک و
+                                الکترونیک. ساخت دستگاه بازی واقعی!</p>
+                                <div class="main-button" style="margin-top:10px;"><a href="#" data-bs-toggle="modal"
+                                                                                       data-bs-target="#registerModal">ثبت‌نام</a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer programming">
+                              <div class="events_item">
+                                <div class="thumb">
+                                  <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                                    <div
+                                      style="background:linear-gradient(135deg,#006868,#008d8d); height:200px; display:flex; align-items:center; justify-content:center; font-size:64px;">
+                                      💻</div>
+                                    </a>
+                                    <span class="category">برنامه‌نویسی</span>
+                                    <span class="price">
+                                      <h6>۵ ترم</h6>
+                                    </span>
+                                  </div>
+                                  <div class="down-content">
+                                    <span class="author">مسیر تخصصی</span>
+                                    <h4>از کد تا آتاری</h4>
+                                    <p style="font-size:13px; color:#666; margin-top:8px;">ساخت بازی واقعی با پایتون پیشرفته. از منطق تا
+                                      پروژه‌های مستقل!</p>
+                                      <div class="main-button" style="margin-top:10px;"><a href="#" data-bs-toggle="modal"
+                                                                                             data-bs-target="#registerModal">ثبت‌نام</a></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer robotics">
+                                    <div class="events_item">
+                                      <div class="thumb">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                                          <div
+                                            style="background:linear-gradient(135deg,#ed7d31,#f5be98); height:200px; display:flex; align-items:center; justify-content:center; font-size:64px;">
+                                            🤖</div>
+                                          </a>
+                                          <span class="category">رباتیک</span>
+                                          <span class="price">
+                                            <h6>۶ ترم</h6>
+                                          </span>
+                                        </div>
+                                        <div class="down-content">
+                                          <span class="author">مسیر تخصصی</span>
+                                          <h4>از باتری تا حرکت</h4>
+                                          <p style="font-size:13px; color:#666; margin-top:8px;">طراحی و ساخت ربات مستقل. موتور، حسگر، کنترل بی‌سیم!
+                                          </p>
+                                          <div class="main-button" style="margin-top:10px;"><a href="#" data-bs-toggle="modal"
+                                                                                                 data-bs-target="#registerModal">ثبت‌نام</a></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer electronics">
+                                        <div class="events_item">
+                                          <div class="thumb">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                                              <div
+                                                style="background:linear-gradient(135deg,#008d8d,#00bcbc); height:200px; display:flex; align-items:center; justify-content:center; font-size:64px;">
+                                                ⚡</div>
+                                              </a>
+                                              <span class="category">الکترونیک</span>
+                                              <span class="price">
+                                                <h6>۴ ترم</h6>
+                                              </span>
+                                            </div>
+                                            <div class="down-content">
+                                              <span class="author">مسیر تخصصی</span>
+                                              <h4>از الکترون تا رادیو</h4>
+                                              <p style="font-size:13px; color:#666; margin-top:8px;">طراحی مدارات آنالوگ و دیجیتال، PCB و ارتباطات
+                                                رادیویی!</p>
+                                                <div class="main-button" style="margin-top:10px;"><a href="#" data-bs-toggle="modal"
+                                                                                                       data-bs-target="#registerModal">ثبت‌نام</a></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer programming robotics electronics">
+                                              <div class="events_item">
+                                                <div class="thumb">
+                                                  <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                                                    <div
+                                                      style="background:linear-gradient(135deg,#007171,#ed7d31); height:200px; display:flex; align-items:center; justify-content:center; font-size:64px;">
+                                                      🔬</div>
+                                                    </a>
+                                                    <span class="category">پیشرفته</span>
+                                                    <span class="price">
+                                                      <h6>ترم‌های بعدی</h6>
+                                                    </span>
+                                                  </div>
+                                                  <div class="down-content">
+                                                    <span class="author">سطح پیشرفته</span>
+                                                    <h4>رباتیک پیشرفته + هوش مصنوعی</h4>
+                                                    <p style="font-size:13px; color:#666; margin-top:8px;">پردازش تصویر، LLM، مدل‌سازی ۳D و طراحی برد
+                                                      الکتریکی!</p>
+                                                      <div class="main-button" style="margin-top:10px;"><a href="#" data-bs-toggle="modal"
+                                                                                                             data-bs-target="#registerModal">ثبت‌نام</a></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer programming">
+                                                    <div class="events_item">
+                                                      <div class="thumb">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                                                          <div
+                                                            style="background:linear-gradient(135deg,#006868,#ed7d31); height:200px; display:flex; align-items:center; justify-content:center; font-size:64px;">
+                                                            🏆</div>
+                                                          </a>
+                                                          <span class="category">پورتفولیو</span>
+                                                          <span class="price">
+                                                            <h6>در انتهای هر دوره</h6>
+                                                          </span>
+                                                        </div>
+                                                        <div class="down-content">
+                                                          <span class="author">برای همه</span>
+                                                          <h4>پورتفولیو و مدرک آنلاین</h4>
+                                                          <p style="font-size:13px; color:#666; margin-top:8px;">صفحه‌ی پورتفولیوی شخصی در ByteOrbit.ir با پروژه‌ها
+                                                            و مهارت‌ها!</p>
+                                                            <div class="main-button" style="margin-top:10px;"><a href="#contact">بیشتر بدان</a></div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </section>
+                                                <!-- ***** COURSES END ***** -->
+
+                                                <!-- ***** FUN FACTS START ***** -->
+                                                <div class="section fun-facts">
+                                                  <div class="container">
+                                                    <div class="row">
+                                                      <div class="col-lg-12">
+                                                        <div class="wrapper">
+                                                          <div class="row">
+                                                            <div class="col-lg-3 col-md-6">
+                                                              <div class="counter">
+                                                                <h2 class="timer count-title count-number" data-to="120" data-speed="1000"></h2>
+                                                                <p class="count-text">هنرجوی موفق</p>
+                                                              </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6">
+                                                              <div class="counter">
+                                                                <h2 class="timer count-title count-number" data-to="16" data-speed="1000"></h2>
+                                                                <p class="count-text">حداکثر ظرفیت هر گروه</p>
+                                                              </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6">
+                                                              <div class="counter">
+                                                                <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2>
+                                                                <p class="count-text">جلسه‌ی دوره‌ی شروع</p>
+                                                              </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6">
+                                                              <div class="counter end">
+                                                                <h2 class="timer count-title count-number" data-to="100" data-speed="1000"></h2>
+                                                                <p class="count-text">درصد گارانتی رضایت</p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <!-- ***** FUN FACTS END ***** -->
+
+                                                <!-- ***** PRICING SECTION ***** -->
+                                                <div class="pricing-section" id="pricing">
+                                                  <div class="container">
+                                                    <div class="row mb-5">
+                                                      <div class="col-lg-12 text-center">
+                                                        <div class="section-heading">
+                                                          <h6>تعرفه شهریه</h6>
+                                                          <h2>شهریه دوره‌های <em>بایت اوربیت</em></h2>
+                                                          <div class="orbit-line"></div>
+                                                          <p>چهار نوع دوره برای هر سلیقه و بودجه‌ای</p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-lg-3 col-md-6 mb-4">
+                                                        <div class="pricing-card">
+                                                          <div class="pricing-badge">عمومی</div>
+                                                          <h3 style="color:#007171; margin-bottom:5px;">ترمیک عمومی</h3>
+                                                          <p style="font-size:13px; color:#888;">تا ۱۵ نفر</p>
+                                                          <div class="price-amount">۳٬۷۰۰٬۰۰۰<span class="price-unit"> تومان</span></div>
+                                                          <ul class="pricing-features">
+                                                            <li>۱۸ ساعت کلاس</li>
+                                                            <li>۱۲ جلسه‌ی ۹۰ دقیقه‌ای</li>
+                                                            <li>۱ تا ۳ جلسه در هفته</li>
+                                                            <li>فقط برای مباحث غیر عملی</li>
+                                                          </ul>
+                                                          <a href="#contact" class="pricing-cta" data-bs-toggle="modal" data-bs-target="#registerModal">ثبت‌نام</a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-md-6 mb-4">
+                                                        <div class="pricing-card featured">
+                                                          <div class="pricing-badge">پرطرفدار ⭐</div>
+                                                          <h3 style="margin-bottom:5px;">ترمیک نیمه‌خصوصی</h3>
+                                                          <p style="font-size:13px; color:rgba(255,255,255,0.75);">گروه ۴ نفره</p>
+                                                          <div class="price-amount">۴٬۴۰۰٬۰۰۰<span class="price-unit"> تومان</span></div>
+                                                          <ul class="pricing-features">
+                                                            <li>۲۴ ساعت کلاس</li>
+                                                            <li>۱۲ جلسه‌ی ۲ ساعته</li>
+                                                            <li>۱ تا ۳ جلسه در هفته</li>
+                                                            <li>گارانتی رضایت و تعویض</li>
+                                                            <li>تضمین یادگیری موفق</li>
+                                                          </ul>
+                                                          <a href="#contact" class="pricing-cta" data-bs-toggle="modal" data-bs-target="#registerModal">ثبت‌نام</a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-md-6 mb-4">
+                                                        <div class="pricing-card">
+                                                          <div class="pricing-badge">خصوصی</div>
+                                                          <h3 style="color:#007171; margin-bottom:5px;">دوره‌ی خصوصی</h3>
+                                                          <p style="font-size:13px; color:#888;">۱ نفره — مسیر اختصاصی</p>
+                                                          <div class="price-amount">۸٬۶۰۰٬۰۰۰<span class="price-unit"> تومان</span></div>
+                                                          <ul class="pricing-features">
+                                                            <li>۲۴ ساعت آموزش خصوصی</li>
+                                                            <li>مسیر آموزشی اختصاصی</li>
+                                                            <li>هر ساعت ۴۰۰٬۰۰۰ تومان</li>
+                                                            <li>برنامه‌ریزی منعطف</li>
+                                                          </ul>
+                                                          <a href="#contact" class="pricing-cta" data-bs-toggle="modal" data-bs-target="#registerModal">ثبت‌نام</a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-md-6 mb-4">
+                                                        <div class="pricing-card" style="border-color:#ed7d31;">
+                                                          <div class="pricing-badge" style="background:#ed7d31;">نیترو 🚀</div>
+                                                          <h3 style="color:#007171; margin-bottom:5px;">دوره‌ی نیترو</h3>
+                                                          <p style="font-size:13px; color:#888;">کامل‌ترین بسته</p>
+                                                          <div class="price-amount">۱۷٬۵۰۰٬۰۰۰<span class="price-unit"> تومان</span></div>
+                                                          <ul class="pricing-features">
+                                                            <li>۳۶ ساعت کلاس خصوصی</li>
+                                                            <li>مسیر شخصی‌سازی‌شده</li>
+                                                            <li>۱۲ ساعت کلاس آنلاین</li>
+                                                            <li>پشتیبانی هفتگی</li>
+                                                            <li>۱۴ ساعت استفاده از کارگاه</li>
+                                                          </ul>
+                                                          <a href="#contact" class="pricing-cta" style="background:#ed7d31;" data-bs-toggle="modal"
+                                                             data-bs-target="#registerModal">ثبت‌نام</a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <!-- Festival Banner -->
+                                                    <div class="row mt-4">
+                                                      <div class="col-lg-12">
+                                                        <div
+                                                          style="background:linear-gradient(135deg,#007171,#00bcbc); border-radius:20px; padding:35px 40px; color:#fff; text-align:center; position:relative; overflow:hidden;">
+                                                          <div
+                                                            style="position:absolute; top:-20px; right:-20px; width:120px; height:120px; background:rgba(237,125,49,0.2); border-radius:50%;">
+                                                          </div>
+                                                          <div
+                                                            style="position:absolute; bottom:-30px; left:-30px; width:150px; height:150px; background:rgba(0,188,188,0.2); border-radius:50%;">
+                                                          </div>
+                                                          <span
+                                                            style="background:#ed7d31; color:#fff; border-radius:20px; padding:5px 20px; font-size:13px; font-weight:700;">🎉
+                                                            جشنواره‌ی شروع تازه!</span>
+                                                            <h3 style="color:#fff; margin:15px 0 5px; font-size:24px;">به مناسبت تغییر محل کارگاه و شروعی دوباره</h3>
+                                                            <p style="color:rgba(255,255,255,0.85); margin-bottom:20px;">تخفیف شروع تازه + تخفیف پرداخت نقدی = صرفه‌جویی
+                                                              ۱٬۶۵۰٬۰۰۰ تومان!</p>
+                                                              <div class="row justify-content-center">
+                                                                <div class="col-lg-3 col-md-6 mb-2">
+                                                                  <div style="background:rgba(255,255,255,0.15); border-radius:12px; padding:12px; font-size:13px;">
+                                                                    دوره‌ی نقطه‌ی شروع <br><strong style="font-size:18px;">۴٬۴۰۰٬۰۰۰</strong> تومان
+                                                                  </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-6 mb-2">
+                                                                  <div style="background:rgba(255,255,255,0.15); border-radius:12px; padding:12px; font-size:13px;">
+                                                                    تخفیف شروع تازه <br><strong style="font-size:18px; color:#f5be98;">- ۱٬۰۰۰٬۰۰۰</strong> تومان
+                                                                  </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-6 mb-2">
+                                                                  <div style="background:rgba(255,255,255,0.15); border-radius:12px; padding:12px; font-size:13px;">
+                                                                    تخفیف پرداخت نقدی <br><strong style="font-size:18px; color:#f5be98;">- ۶۵۰٬۰۰۰</strong> تومان
+                                                                  </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-6 mb-2">
+                                                                  <div style="background:#ed7d31; border-radius:12px; padding:12px; font-size:13px;">
+                                                                    قیمت نهایی <br><strong style="font-size:22px;">۳٬۷۵۰٬۰۰۰</strong> تومان!
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <div
+                                                                style="margin-top:20px; background:rgba(237,125,49,0.3); border-radius:12px; padding:12px; display:inline-block;">
+                                                                🤝 هر دوستت هم که باهات ثبت‌نام کنه، هر دونفر <strong style="color:#f5be98;">۷۰۰٬۰۰۰ تومان</strong> تخفیف
+                                                                اضافه می‌گیرید!
+                                                              </div>
+                                                              <div style="margin-top:20px;">
+                                                                <a href="#contact" class="pricing-cta d-inline-block"
+                                                                   style="background:#ed7d31; color:#fff !important; padding:14px 40px; font-size:16px;"
+                                                                   data-bs-toggle="modal" data-bs-target="#registerModal">همین الان ثبت‌نام کن</a>
+                                                                <span style="display:inline-block; margin-right:15px; color:rgba(255,255,255,0.75); font-size:14px;">⚠️
+                                                                  ظرفیت محدود: فقط ۱۶ نفر</span>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <!-- ***** EQUIPMENT SECTION ***** -->
+                                                      <div class="equipment-section">
+                                                        <div class="container">
+                                                          <div class="row mb-5">
+                                                            <div class="col-lg-12 text-center">
+                                                              <div class="section-heading">
+                                                                <h6>تجهیزات</h6>
+                                                                <h2>پک‌های رباتیک <em>Orbital Ring</em></h2>
+                                                                <div class="orbit-line"></div>
+                                                                <p>بدون نیاز به خرید محصول — امکان اجاره برای یک ترم</p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div class="row">
+                                                            <div class="col-lg-4 col-md-6 mb-4">
+                                                              <div class="equipment-card">
+                                                                <div class="equipment-icon text-center">🛸</div>
+                                                                <h4 style="color:#007171; text-align:center; margin-bottom:5px;">Orbital Ring (+)</h4>
+                                                                <p style="font-size:13px; color:#888; text-align:center; margin-bottom:20px;">بسته‌ی کامل با ماژول‌های
+                                                                  الحاقی</p>
+                                                                  <div class="equipment-price-row">
+                                                                    <span>خرید:</span>
+                                                                    <span class="equipment-price-buy">۲٬۶۰۰٬۰۰۰ تومان</span>
+                                                                  </div>
+                                                                  <div class="equipment-price-row">
+                                                                    <span>اجاره (یک ترم):</span>
+                                                                    <span class="equipment-price-rent">۴۶۸٬۰۰۰ تومان</span>
+                                                                  </div>
+                                                                  <a href="#contact" class="pricing-cta mt-3 d-block" data-bs-toggle="modal"
+                                                                     data-bs-target="#registerModal">سفارش</a>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-lg-4 col-md-6 mb-4">
+                                                                <div class="equipment-card">
+                                                                  <div class="equipment-icon text-center">🔧</div>
+                                                                  <h4 style="color:#007171; text-align:center; margin-bottom:5px;">Orbital Ring</h4>
+                                                                  <p style="font-size:13px; color:#888; text-align:center; margin-bottom:20px;">بسته‌ی پایه</p>
+                                                                  <div class="equipment-price-row">
+                                                                    <span>خرید:</span>
+                                                                    <span class="equipment-price-buy">۱٬۷۵۰٬۰۰۰ تومان</span>
+                                                                  </div>
+                                                                  <div class="equipment-price-row">
+                                                                    <span>اجاره (یک ترم):</span>
+                                                                    <span class="equipment-price-rent">۳۱۵٬۰۰۰ تومان</span>
+                                                                  </div>
+                                                                  <a href="#contact" class="pricing-cta mt-3 d-block" data-bs-toggle="modal"
+                                                                     data-bs-target="#registerModal">سفارش</a>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-lg-4 col-md-12 mb-4">
+                                                                <div class="equipment-card" style="border-color:#ed7d31;">
+                                                                  <div class="equipment-icon text-center">🔋</div>
+                                                                  <h4 style="color:#007171; text-align:center; margin-bottom:5px;">(+) پک باتری (اختیاری)</h4>
+                                                                  <p style="font-size:13px; color:#888; text-align:center; margin-bottom:20px;">برای استفاده‌ی بی‌سیم</p>
+                                                                  <div class="equipment-price-row">
+                                                                    <span>قیمت:</span>
+                                                                    <span class="equipment-price-buy">۸۵۰٬۰۰۰ تومان</span>
+                                                                  </div>
+                                                                  <ul style="font-size:13px; color:#555; margin-top:10px; list-style:none; padding:0;">
+                                                                    <li>✓ یک جفت باتری 18650 (500,000 تومان)</li>
+                                                                    <li>✓ جاباتری + مدار محافظ (350,000 تومان)</li>
+                                                                  </ul>
+                                                                  <a href="#contact" class="pricing-cta mt-3 d-block" style="background:#ed7d31;" data-bs-toggle="modal"
+                                                                     data-bs-target="#registerModal">سفارش</a>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="row">
+                                                              <div class="col-12">
+                                                                <div class="alert-orbit">
+                                                                  <strong>📝 نکات مهم:</strong> هزینه‌ی اجاره‌ی پک‌ها برای یک ترم برابر ۱۸٪ هزینه‌ی خرید آن‌هاست. پک‌های
+                                                                  رباتیک خریداری شده هم شامل <strong>گارانتی بازگشت وجه</strong> می‌شن — تا جلسه‌ی میانی ترم ۱۰۰٪ و تا جلسه‌ی
+                                                                  پایانی ۸۲٪ مبلغ برگشت داده می‌شه.
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+
+                                                        <!-- ***** TEAM (GUARANTEES) START ***** -->
+                                                        <div class="guarantee-section" id="guarantee">
+                                                          <div class="container">
+                                                            <div class="row mb-5">
+                                                              <div class="col-lg-12 text-center">
+                                                                <div class="section-heading">
+                                                                  <h6>گارانتی‌ها</h6>
+                                                                  <h2>ثبت‌نام با <em>خیال راحت</em></h2>
+                                                                  <div class="orbit-line"></div>
+                                                                  <p>بایت اوربیت تنها مجموعه‌ای‌ه که با سه گارانتی، یادگیری شما را تضمین می‌کند</p>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="row">
+                                                              <div class="col-lg-4 col-md-6 mb-4">
+                                                                <div class="guarantee-card">
+                                                                  <div class="guarantee-icon">
+                                                                    <i class="fa fa-check-circle"></i>
+                                                                  </div>
+                                                                  <h4>تضمین یادگیری موفق</h4>
+                                                                  <p style="font-size:14px; color:#555; line-height:1.8;">اگر دانش‌آموز در چالش نهایی موفق نشد، بایت اوربیت تا
+                                                                    رسیدن به موفقیت با <strong>آموزش خصوصی رایگان</strong> حمایت می‌کند.</p>
+                                                                    <div
+                                                                      style="background:#eef8fa; border-radius:10px; padding:12px; margin-top:15px; font-size:13px; color:#007171; font-weight:600;">
+                                                                      شرط: شرکت در ۸۰٪ جلسات و انجام تمرین‌ها
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4">
+                                                                  <div class="guarantee-card">
+                                                                    <div class="guarantee-icon">
+                                                                      <i class="fa fa-undo"></i>
+                                                                    </div>
+                                                                    <h4>گارانتی رضایت — بازگشت وجه</h4>
+                                                                    <p style="font-size:14px; color:#555; line-height:1.8;">تا جلسه‌ی میانی ترم، به هر دلیلی مایل به ادامه
+                                                                      نبودید، <strong>تمام مبلغ شهریه</strong> بازگشت داده می‌شود.</p>
+                                                                      <div
+                                                                        style="background:#eef8fa; border-radius:10px; padding:12px; margin-top:15px; font-size:13px; color:#007171; font-weight:600;">
+                                                                        هر دلیلی موجه است! هیچ بهانه‌ای نمی‌خواد.
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-lg-4 col-md-12 mb-4">
+                                                                    <div class="guarantee-card">
+                                                                      <div class="guarantee-icon">
+                                                                        <i class="fa fa-tools"></i>
+                                                                      </div>
+                                                                      <h4>گارانتی تعویض قطعات</h4>
+                                                                      <p style="font-size:14px; color:#555; line-height:1.8;">تا اتمام ترم، در صورت آسیب دیدن قطعات پک‌ها (تا سقف
+                                                                        ۶۰٪ هزینه)، قطعه <strong>رایگان تعویض</strong> می‌شود.</p>
+                                                                        <div
+                                                                          style="background:#eef8fa; border-radius:10px; padding:12px; margin-top:15px; font-size:13px; color:#007171; font-weight:600;">
+                                                                          هزینه‌ی گارانتی‌ها: ۱۰٪ هزینه‌ی پک (۴۴۰٬۰۰۰ تومان)
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <!-- ***** GUARANTEES END ***** -->
+
+                                                              <!-- ***** TESTIMONIALS START ***** -->
+                                                              <div class="section testimonials">
+                                                                <div class="container">
+                                                                  <div class="row">
+                                                                    <div class="col-lg-7">
+                                                                      <div class="owl-carousel owl-testimonials">
+                                                                        <div class="item">
+                                                                          <p>"دخترم از وقتی تو کارگاه بایت اوربیت ثبت‌نام کرد، هر روز از مدرسه میاد خونه و می‌ره پای میکروکنترلرش!
+                                                                            الان یه LED رینگ ساخته که با کد کنترل می‌کنه. واقعاً تغییر آورده توی روحیه‌اش."</p>
+                                                                            <div class="author">
+                                                                              <img src="assets/images/testimonial-author.jpg" alt="">
+                                                                              <span class="category">والدین هنرجو — کلاس B2</span>
+                                                                              <h4>خانم رحیمی</h4>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="item">
+                                                                            <p>"انتظار نداشتم بچه‌ام این‌قدر سریع یاد بگیره. جلسه‌ی چهارم بود که تونست یه بازی ساده بنویسه. روش تدریس
+                                                                              خیلی باحاله — نه درسی و نه خسته‌کننده. بیشتر شبیه کارآموزیه!"</p>
+                                                                              <div class="author">
+                                                                                <img src="assets/images/testimonial-author.jpg" alt="">
+                                                                                <span class="category">والدین هنرجو — کلاس C1</span>
+                                                                                <h4>آقای کریمی</h4>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="item">
+                                                                              <p>"من خودم به عنوان هنرجو شرکت کردم. مدرس واقعاً وقت می‌ذاره و هر چیزی رو با مثال عملی توضیح می‌ده.
+                                                                                گارانتی بازگشت وجه هم یه اعتماد بزرگ ایجاد کرد برام. پیشنهادم به همه."</p>
+                                                                                <div class="author">
+                                                                                  <img src="assets/images/testimonial-author.jpg" alt="">
+                                                                                  <span class="category">هنرجو — کلاس C2</span>
+                                                                                  <h4>علی محمدی</h4>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="col-lg-5 align-self-center">
+                                                                            <div class="section-heading">
+                                                                              <h6>نظرات هنرجوها</h6>
+                                                                              <h2>اونا چی می‌گن؟</h2>
+                                                                              <p>نظرات واقعی از والدین و هنرجوهای بایت اوربیت. ما به تجربه‌ی یادگیری باور داریم، نه فقط آموزش!</p>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <!-- ***** TESTIMONIALS END ***** -->
+
+                                                                    <!-- ***** SCHEDULE/EVENTS START ***** -->
+                                                                    <div class="section events" id="events">
+                                                                      <div class="container">
+                                                                        <div class="row">
+                                                                          <div class="col-lg-12 text-center">
+                                                                            <div class="section-heading">
+                                                                              <h6>برنامه کلاس‌ها</h6>
+                                                                              <h2>بازه‌ی زمانی و <em>ساختار کلاس‌ها</em></h2>
+                                                                              <div class="orbit-line"></div>
+                                                                              <p>هر جلسه ۲ ساعته است و با ساختار مشخصی برگزار می‌شود</p>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="col-lg-12 col-md-6">
+                                                                            <div class="item">
+                                                                              <div class="row">
+                                                                                <div class="col-lg-3">
+                                                                                  <div class="image"
+                                                                                       style="background:linear-gradient(135deg,#007171,#00bcbc); height:120px; display:flex; align-items:center; justify-content:center; font-size:48px; border-radius:12px;">
+                                                                                    🌅</div>
+                                                                                  </div>
+                                                                                  <div class="col-lg-9">
+                                                                                    <ul>
+                                                                                      <li>
+                                                                                        <span class="category">صبح ۱</span>
+                                                                                        <h4>ساعت ۹ تا ۱۱ — گروه اول</h4>
+                                                                                      </li>
+                                                                                      <li>
+                                                                                        <span>رده‌ی سنی:</span>
+                                                                                        <h6>نیمه دوم دبستان (۱۰-۱۲ سال)</h6>
+                                                                                      </li>
+                                                                                      <li>
+                                                                                        <span>ظرفیت:</span>
+                                                                                        <h6>۴ نفر</h6>
+                                                                                      </li>
+                                                                                      <li>
+                                                                                        <span>روزها:</span>
+                                                                                        <h6>شنبه و دوشنبه / یا سه‌شنبه و پنجشنبه</h6>
+                                                                                      </li>
+                                                                                    </ul>
+                                                                                    <a href="#contact" data-bs-toggle="modal" data-bs-target="#registerModal"><i
+                                                                                      class="fa fa-angle-left"></i></a>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="col-lg-12 col-md-6">
+                                                                                <div class="item">
+                                                                                  <div class="row">
+                                                                                    <div class="col-lg-3">
+                                                                                      <div class="image"
+                                                                                           style="background:linear-gradient(135deg,#006868,#008d8d); height:120px; display:flex; align-items:center; justify-content:center; font-size:48px; border-radius:12px;">
+                                                                                        ☀️</div>
+                                                                                      </div>
+                                                                                      <div class="col-lg-9">
+                                                                                        <ul>
+                                                                                          <li>
+                                                                                            <span class="category">عصر ۱</span>
+                                                                                            <h4>ساعت ۱۳ تا ۱۵ — گروه دوم</h4>
+                                                                                          </li>
+                                                                                          <li>
+                                                                                            <span>رده‌ی سنی:</span>
+                                                                                            <h6>متوسطه‌ی اول (۱۲-۱۵ سال)</h6>
+                                                                                          </li>
+                                                                                          <li>
+                                                                                            <span>ظرفیت:</span>
+                                                                                            <h6>۴ نفر</h6>
+                                                                                          </li>
+                                                                                          <li>
+                                                                                            <span>روزها:</span>
+                                                                                            <h6>یکشنبه و سه‌شنبه / یا شنبه تا چهارشنبه</h6>
+                                                                                          </li>
+                                                                                        </ul>
+                                                                                        <a href="#contact" data-bs-toggle="modal" data-bs-target="#registerModal"><i
+                                                                                          class="fa fa-angle-left"></i></a>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  <div class="col-lg-12 col-md-6">
+                                                                                    <div class="item">
+                                                                                      <div class="row">
+                                                                                        <div class="col-lg-3">
+                                                                                          <div class="image"
+                                                                                               style="background:linear-gradient(135deg,#ed7d31,#f5be98); height:120px; display:flex; align-items:center; justify-content:center; font-size:48px; border-radius:12px;">
+                                                                                            🌆</div>
+                                                                                          </div>
+                                                                                          <div class="col-lg-9">
+                                                                                            <ul>
+                                                                                              <li>
+                                                                                                <span class="category">عصر ۳</span>
+                                                                                                <h4>ساعت ۱۷ تا ۱۹ — گروه سوم</h4>
+                                                                                              </li>
+                                                                                              <li>
+                                                                                                <span>رده‌ی سنی:</span>
+                                                                                                <h6>متوسطه‌ی دوم (۱۵-۱۸ سال)</h6>
+                                                                                              </li>
+                                                                                              <li>
+                                                                                                <span>ظرفیت:</span>
+                                                                                                <h6>۴ نفر</h6>
+                                                                                              </li>
+                                                                                              <li>
+                                                                                                <span>روزها:</span>
+                                                                                                <h6>دوشنبه و چهارشنبه / یا پنجشنبه</h6>
+                                                                                              </li>
+                                                                                            </ul>
+                                                                                            <a href="#contact" data-bs-toggle="modal" data-bs-target="#registerModal"><i
+                                                                                              class="fa fa-angle-left"></i></a>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                      <div class="col-12 mt-4">
+                                                                                        <div class="alert-orbit" style="text-align:center;">
+                                                                                          <strong>📋 ساختار هر جلسه:</strong> مرور و بررسی فعالیت‌ها ← آموزش و تمرین (بخش ۱) ← استراحت ← آموزش و تمرین
+                                                                                          (بخش ۲) ← جمع‌بندی
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                                <!-- ***** SCHEDULE/EVENTS END ***** -->
+
+                                                                                <!-- ***** CONTACT START ***** -->
+                                                                                <div class="contact-us section" id="contact">
+                                                                                  <div class="container">
+                                                                                    <div class="row">
+                                                                                      <div class="col-lg-6 align-self-center">
+                                                                                        <div class="section-heading">
+                                                                                          <h6>تماس با ما</h6>
+                                                                                          <h2>مشاوره‌ی رایگان — ثبت‌نام کن!</h2>
+                                                                                          <p>برای رزرو جلسه‌ی مشاوره‌ی رایگان و ثبت‌نام در دوره، اطلاعاتت رو پر کن. ظرفیت محدوده، زود باش!</p>
+                                                                                          <div class="special-offer-orbit">
+                                                                                            <div class="row align-items-center">
+                                                                                              <div class="col-8">
+                                                                                                <p style="margin:0; font-size:13px; color:rgba(255,255,255,0.9);">قیمت اصلی دوره:</p>
+                                                                                                <div class="original-price">۵٬۴۵۵٬۰۰۰ تومان</div>
+                                                                                                <h4 style="color:#fff; margin:5px 0; font-size:20px;">قیمت جشنواره‌ای:</h4>
+                                                                                                <div class="festival-price">۳٬۷۵۰٬۰۰۰ تومان</div>
+                                                                                                <div class="discount-tag">با تضمین + گارانتی کامل ✓</div>
+                                                                                              </div>
+                                                                                              <div class="col-4 text-center">
+                                                                                                <div style="font-size:50px;">🎉</div>
+                                                                                                <span style="font-size:11px; color:rgba(255,255,255,0.8);">ظرفیت فقط ۱۶ نفر!</span>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                          <div style="margin-top:20px;">
+                                                                                            <p style="color:rgba(255,255,255,0.9); font-size:14px;"><i class="fa fa-map-marker"
+                                                                                                                                                         style="color:#ed7d31; margin-left:8px;"></i> اصفهان، چهارباغ پایین، دروازه دولت</p>
+                                                                                              <p style="color:rgba(255,255,255,0.9); font-size:14px;"><i class="fa fa-phone"
+                                                                                                                                                           style="color:#ed7d31; margin-left:8px;"></i> باقری: ۰۹۰۲-۹۳۰-۱۲۰۲</p>
+                                                                                                <p style="color:rgba(255,255,255,0.9); font-size:14px;"><i class="fa fa-globe"
+                                                                                                                                                             style="color:#ed7d31; margin-left:8px;"></i> ByteOrbit.ir (به زودی)</p>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-6">
+                                                                                              <div class="contact-us-content" style="padding:35px;">
+                                                                                                <h4 style="color:#007171; margin-bottom:20px; text-align:center;">فرم ثبت‌نام / ارتباط با ما</h4>
+                                                                                                <div id="form-success" class="form-success">
+                                                                                                  <i class="fa fa-check-circle"
+                                                                                                     style="font-size:32px; color:#007171; display:block; margin-bottom:10px;"></i>
+                                                                                                  پیام شما با موفقیت ارسال شد! به زودی با شما تماس خواهیم گرفت.
+                                                                                                </div>
+                                                                                                <div id="form-error" class="form-error"></div>
+                                                                                                <form id="contact-form">
+                                                                                                  @Html.AntiForgeryToken()
+                                                                                                  <div class="row">
+                                                                                                    <div class="col-lg-12">
+                                                                                                      <fieldset>
+                                                                                                        <input type="text" name="Name" id="Name" placeholder="نام کامل شما *" autocomplete="on" required
+                                                                                                               maxlength="200">
+                                                                                                      </fieldset>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-12">
+                                                                                                      <fieldset>
+                                                                                                        <input type="tel" name="Phone" id="Phone" placeholder="شماره تماس * (مثال: 09123456789)" required
+                                                                                                               maxlength="12">
+                                                                                                      </fieldset>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-12">
+                                                                                                      <fieldset>
+                                                                                                        <select name="Subject" id="Subject" required
+                                                                                                                style="width:100%; padding:13px 20px; border-radius:10px; font-family:'Vazirmatn',sans-serif; font-size:14px; color:#555; background:#f7f7f7; appearance:none;">
+                                                                                                          <option value="" disabled selected>موضوع را انتخاب کنید *</option>
+                                                                                                          <option value="مشاوره رایگان">مشاوره رایگان</option>
+                                                                                                          <option value="ثبت‌نام دوره‌ی نقطه شروع">ثبت‌نام دوره‌ی نقطه شروع</option>
+                                                                                                          <option value="ثبت‌نام دوره‌ی برنامه‌نویسی">ثبت‌نام دوره‌ی برنامه‌نویسی</option>
+                                                                                                          <option value="ثبت‌نام دوره‌ی رباتیک">ثبت‌نام دوره‌ی رباتیک</option>
+                                                                                                          <option value="ثبت‌نام دوره‌ی الکترونیک">ثبت‌نام دوره‌ی الکترونیک</option>
+                                                                                                          <option value="سوال درباره شهریه">سوال درباره شهریه</option>
+                                                                                                          <option value="سایر سوالات">سایر سوالات</option>
+                                                                                                        </select>
+                                                                                                      </fieldset>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-12">
+                                                                                                      <fieldset>
+                                                                                                        <textarea name="Message" id="Message" placeholder="پیام یا سوال شما (اختیاری)..." maxlength="2000"
+                                                                                                                  rows="4"></textarea>
+                                                                                                      </fieldset>
+                                                                                                    </div>
+                                                                                                    <div class="col-lg-12">
+                                                                                                      <fieldset>
+                                                                                                        <button type="submit" id="form-submit">ارسال و ثبت‌نام <i class="fa fa-paper-plane"
+                                                                                                                                                                    style="margin-right:8px;"></i></button>
+                                                                                                        </fieldset>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </form>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                        <!-- ***** CONTACT END ***** -->
+
+                                                                                        <!-- ***** REGISTER MODAL ***** -->
+                                                                                        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                                                                                          <div class="modal-dialog modal-dialog-centered">
+                                                                                            <div class="modal-content">
+                                                                                              <div class="modal-header">
+                                                                                                <h5 class="modal-title" id="registerModalLabel">🚀 ثبت‌نام / مشاوره رایگان</h5>
+                                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                              </div>
+                                                                                              <div class="modal-body" style="padding:30px;">
+                                                                                                <p style="color:#555; font-size:14px; margin-bottom:20px;">اطلاعاتتو وارد کن تا یه مربی بایت اوربیت باهات تماس
+                                                                                                  بگیره 🎯</p>
+                                                                                                  <div id="modal-form-success" class="form-success">
+                                                                                                    <i class="fa fa-check-circle" style="font-size:32px; color:#007171; display:block; margin-bottom:10px;"></i>
+                                                                                                    پیام شما دریافت شد! به زودی باهاتون تماس می‌گیریم.
+                                                                                                  </div>
+                                                                                                  <div id="modal-form-error" class="form-error"></div>
+                                                                                                  <form id="modal-contact-form">
+                                                                                                    @Html.AntiForgeryToken()
+                                                                                                    <div class="mb-3">
+                                                                                                      <input type="text" name="Name" class="form-control" placeholder="نام کامل *" required maxlength="200"
+                                                                                                             style="border:2px solid rgba(0,141,141,0.2); border-radius:10px; padding:12px 15px; font-family:'Vazirmatn',sans-serif;">
+                                                                                                    </div>
+                                                                                                    <div class="mb-3">
+                                                                                                      <input type="tel" name="Phone" class="form-control" placeholder="شماره تماس * (09123456789)" required
+                                                                                                             maxlength="12"
+                                                                                                             style="border:2px solid rgba(0,141,141,0.2); border-radius:10px; padding:12px 15px; font-family:'Vazirmatn',sans-serif;">
+                                                                                                    </div>
+                                                                                                    <div class="mb-3">
+                                                                                                      <select name="Subject" class="form-control" required
+                                                                                                              style="border:2px solid rgba(0,141,141,0.2); border-radius:10px; padding:12px 15px; font-family:'Vazirmatn',sans-serif;">
+                                                                                                        <option value="" disabled selected>موضوع را انتخاب کنید *</option>
+                                                                                                        <option value="مشاوره رایگان">مشاوره رایگان</option>
+                                                                                                        <option value="ثبت‌نام دوره‌ی نقطه شروع">ثبت‌نام دوره‌ی نقطه شروع</option>
+                                                                                                        <option value="ثبت‌نام دوره‌ی برنامه‌نویسی">ثبت‌نام دوره‌ی برنامه‌نویسی</option>
+                                                                                                        <option value="ثبت‌نام دوره‌ی رباتیک">ثبت‌نام دوره‌ی رباتیک</option>
+                                                                                                        <option value="ثبت‌نام دوره‌ی الکترونیک">ثبت‌نام دوره‌ی الکترونیک</option>
+                                                                                                        <option value="سوال درباره شهریه">سوال درباره شهریه</option>
+                                                                                                      </select>
+                                                                                                    </div>
+                                                                                                    <div class="mb-3">
+                                                                                                      <textarea name="Message" class="form-control" placeholder="پیام یا سوال (اختیاری)..." rows="3"
+                                                                                                                maxlength="2000"
+                                                                                                                style="border:2px solid rgba(0,141,141,0.2); border-radius:10px; padding:12px 15px; font-family:'Vazirmatn',sans-serif;"></textarea>
+                                                                                                    </div>
+                                                                                                  </form>
+                                                                                                </div>
+                                                                                                <div class="modal-footer">
+                                                                                                  <button type="button" class="btn-orbit-secondary" data-bs-dismiss="modal">بستن</button>
+                                                                                                  <button type="button" class="btn-orbit-primary" id="modal-submit-btn">ارسال <i class="fa fa-paper-plane"
+                                                                                                                                                                                   style="margin-right:5px;"></i></button>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+
+                                                                                            <!-- ***** FOOTER START ***** -->
+                                                                                            <footer>
+                                                                                              <div class="container">
+                                                                                                <div class="row py-4">
+                                                                                                  <div class="col-lg-4 col-md-12 mb-4">
+                                                                                                    <h4 style="color:#00bcbc; font-size:22px; margin-bottom:15px;"><span style="color:#00bcbc;">Byte</span> <span
+                                                                                                      style="color:#fff;">Orbit</span></h4>
+                                                                                                      <p style="color:rgba(255,255,255,0.75); font-size:14px; line-height:1.8;">کارگاه تخصصی آموزش رباتیک، الکترونیک
+                                                                                                        و برنامه‌نویسی. جایی که ایده‌ها به واقعیت تبدیل می‌شن!</p>
+                                                                                                        <div class="footer-social mt-3">
+                                                                                                          <a href="#"><i class="fab fa-instagram"></i></a>
+                                                                                                          <a href="#"><i class="fab fa-telegram"></i></a>
+                                                                                                          <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                                                                                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                      <div class="col-lg-2 col-md-4 mb-4">
+                                                                                                        <h6 style="color:#00bcbc; margin-bottom:15px;">دوره‌ها</h6>
+                                                                                                        <div class="footer-links">
+                                                                                                          <a href="#courses">نقطه‌ی شروع</a>
+                                                                                                          <a href="#courses">برنامه‌نویسی</a>
+                                                                                                          <a href="#courses">رباتیک</a>
+                                                                                                          <a href="#courses">الکترونیک</a>
+                                                                                                          <a href="#courses">رباتیک پیشرفته</a>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                      <div class="col-lg-3 col-md-4 mb-4">
+                                                                                                        <h6 style="color:#00bcbc; margin-bottom:15px;">گارانتی‌ها</h6>
+                                                                                                        <div class="footer-links">
+                                                                                                          <a href="#guarantee">تضمین یادگیری موفق</a>
+                                                                                                          <a href="#guarantee">گارانتی بازگشت وجه</a>
+                                                                                                          <a href="#guarantee">گارانتی تعویض قطعات</a>
+                                                                                                          <a href="#pricing">تعرفه شهریه</a>
+                                                                                                          <a href="#pricing">پک‌های رباتیک</a>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                      <div class="col-lg-3 col-md-4 mb-4">
+                                                                                                        <h6 style="color:#00bcbc; margin-bottom:15px;">تماس با ما</h6>
+                                                                                                        <div class="footer-links">
+                                                                                                          <a href="tel:09029301202"><i class="fa fa-phone" style="margin-left:6px;"></i> ۰۹۰۲-۹۳۰-۱۲۰۲ (باقری)</a>
+                                                                                                          <a href="#"><i class="fa fa-map-marker" style="margin-left:6px;"></i> اصفهان، چهارباغ پایین</a>
+                                                                                                          <a href="#"><i class="fa fa-map-marker" style="margin-left:6px;"></i> دروازه دولت</a>
+                                                                                                          <a href="#"><i class="fa fa-globe" style="margin-left:6px;"></i> ByteOrbit.ir (به زودی)</a>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                    <div class="row">
+                                                                                                      <div class="col-lg-12" style="border-top:1px solid rgba(255,255,255,0.1); padding-top:20px;">
+                                                                                                        <p style="text-align:center;">© ۱۴۰۴ بایت اوربیت — کارگاه رباتیک. تمام حقوق محفوظ است.</p>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </footer>
+                                                                                                <!-- ***** FOOTER END ***** -->
+
+                                                                                                <!-- Scripts -->
+                                                                                                <script src="vendor/jquery/jquery.min.js"></script>
+                                                                                                <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+                                                                                                <script src="assets/js/isotope.min.js"></script>
+                                                                                                <script src="assets/js/owl-carousel.js"></script>
+                                                                                                <script src="assets/js/counter.js"></script>
+                                                                                                <script src="assets/js/custom.js"></script>
+
+                                                                                                <script>
+                                                                                                  // ===== CURRICULUM TABS =====
+                                                                                                  function showTab(tabId, btn) {
+                                                                                                  document.querySelectorAll('.curriculum-panel').forEach(p => p.classList.remove('active'));
+                                                                                                  document.querySelectorAll('.curriculum-tab-btn').forEach(b => b.classList.remove('active'));
+                                                                                                  document.getElementById('tab-' + tabId).classList.add('active');
+                                                                                                  btn.classList.add('active');
+                                                                                                  }
+
+                                                                                                  // ===== CONTACT FORM SUBMISSION =====
+                                                                                                  function submitForm(formEl, successEl, errorEl) {
+                                                                                                  var token = formEl.querySelector('[name="__RequestVerificationToken"]').value;
+                                                                                                  var name = formEl.querySelector('[name="Name"]').value.trim();
+                                                                                                  var phone = formEl.querySelector('[name="Phone"]').value.trim();
+                                                                                                  var subject = formEl.querySelector('[name="Subject"]').value;
+                                                                                                  var message = (formEl.querySelector('[name="Message"]') || {}).value || '';
+
+                                                                                                  if (!name || !phone || !subject) {
+                                                                                                  errorEl.style.display = 'block';
+                                                                                                  errorEl.textContent = 'لطفاً فیلدهای ستاره‌دار را پر کنید.';
+                                                                                                  return;
+                                                                                                  }
+                                                                                                  errorEl.style.display = 'none';
+
+                                                                                                  var formData = new FormData();
+                                                                                                  formData.append('__RequestVerificationToken', token);
+                                                                                                  formData.append('Name', name);
+                                                                                                  formData.append('Phone', phone);
+                                                                                                  formData.append('Subject', subject);
+                                                                                                  formData.append('Message', message);
+
+                                                                                                  var submitBtn = formEl.querySelector('button[type="submit"]') || document.getElementById('modal-submit-btn');
+                                                                                                  if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'در حال ارسال...'; }
+
+                                                                                                  fetch('/Contact/SubmitForm', {
+                                                                                                  method: 'POST',
+                                                                                                  headers: { 'RequestVerificationToken': token },
+                                                                                                  body: formData
+                                                                                                  })
+                                                                                                  .then(function (r) { return r.json(); })
+                                                                                                  .then(function (data) {
+                                                                                                  if (data.success) {
+                                                                                                  formEl.style.display = 'none';
+                                                                                                  successEl.style.display = 'block';
+                                                                                                  } else {
+                                                                                                  errorEl.style.display = 'block';
+                                                                                                  errorEl.textContent = data.message || 'خطایی رخ داده است.';
+                                                                                                  }
+                                                                                                  })
+                                                                                                  .catch(function () {
+                                                                                                  errorEl.style.display = 'block';
+                                                                                                  errorEl.textContent = 'خطا در ارتباط با سرور. لطفاً بعداً تلاش کنید.';
+                                                                                                  })
+                                                                                                  .finally(function () {
+                                                                                                  if (submitBtn) { submitBtn.disabled = false; }
+                                                                                                  });
+                                                                                                  }
+
+                                                                                                  // Main contact form
+                                                                                                  document.getElementById('contact-form').addEventListener('submit', function (e) {
+                                                                                                  e.preventDefault();
+                                                                                                  submitForm(this, document.getElementById('form-success'), document.getElementById('form-error'));
+                                                                                                  });
+
+                                                                                                  // Modal form submit
+                                                                                                  document.getElementById('modal-submit-btn').addEventListener('click', function () {
+                                                                                                  var form = document.getElementById('modal-contact-form');
+                                                                                                  submitForm(form, document.getElementById('modal-form-success'), document.getElementById('modal-form-error'));
+                                                                                                  });
+                                                                                                </script>
+
+                                                                                              </body>
+
+                                                                                            </html>
